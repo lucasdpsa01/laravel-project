@@ -19,4 +19,12 @@ class EventController extends Controller
         ]);
     }
 
+    public function create () {
+        $palavras = ["cadeira", "camiseta", "celular", "teclado"];
+
+        return view('home', [
+            'palavras' => $palavras
+        ]);
+    }
+
 }
