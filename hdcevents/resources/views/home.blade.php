@@ -9,6 +9,7 @@
 @section('header')
     <h1>Bem vindo!</h1>
     <p>Uma página de teste!</p>
+    <p>Estudando Banco de Dados</p>
     <ul>
         @foreach ($palavras as $p)
             <li>{{ $p }}</li>
