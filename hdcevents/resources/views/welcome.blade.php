@@ -1,9 +1,11 @@
-<h1>Bem-vindo</h1>
-<p>Nome: {{ $nome }}</p>
-<p>Idade: {{ $idade }}</p>
+@extends('layout.app')
 
-<ul>
-    @foreach($array as $item)
-        <li>{{ $item }}</li>
-    @endforeach
-</ul>
+@section('title', 'HDC Events')
+
+@section('content')
+
+@foreach($events as $event)
+    <p>{{ $event->title }} -- {{ $event->description }}</p>
+@endforeach
+
+@endsection
