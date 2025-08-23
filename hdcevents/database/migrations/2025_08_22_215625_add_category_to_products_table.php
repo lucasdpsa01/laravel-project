@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::table('products', function (Blueprint $table) {
             $table ->string('category', 100);
+            $table ->integer('numero_livros');
         });
     }
 
@@ -22,7 +23,7 @@ return new class extends Migration
     public function down()
     {
         Schema::table('products', function (Blueprint $table) {
-            $table ->dropColumn('category');
+            $table ->dropColumn('numero_livros');
         });
     }
 };
